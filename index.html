@@ -110,12 +110,6 @@
             unityInstance.SetFullscreen(1);
           };
         }
-
-        // Add the following code to set playsinline attribute
-        const videoElement = document.querySelector("#unity-canvas video");
-        if (videoElement) {
-          videoElement.setAttribute("playsinline", "true");
-        }
       }).catch((message) => {
         alert(message);
       });

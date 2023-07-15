@@ -114,13 +114,6 @@ function createUnityInstance(canvas, config, onProgress) {
     },
   };
 
-  unityInstance.enableInlineVideo = function (enable) {
-    if (Module.WebGLLoader && Module.WebGLLoader.streamingContext) {
-      Module.WebGLLoader.streamingContext.enableInlineVideo(enable);
-    }
-  };
-
-
   Module.SystemInfo = (function () {
 
     var browser, browserVersion, os, osVersion, canvas, gpu;
